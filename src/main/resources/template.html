@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${title}">Sample Template</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="styles.css" th:href="@{styles.css}" />
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<h1>Spring Projects</h1>
+<h2 th:text="${subhead}">Default Sub Header</h2>
+<div th:utext="${content}">Default Content</div>
+</body>
+</html>
